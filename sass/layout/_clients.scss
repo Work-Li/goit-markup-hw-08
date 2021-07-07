@@ -50,9 +50,11 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 150px) / 6);
     height: auto;
+    
 
      &:not(:last-child) {
        margin-right: 30px;
+       margin-bottom: 0;
      }
   }
   
