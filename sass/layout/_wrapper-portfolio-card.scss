@@ -1,0 +1,45 @@
+﻿.portfolio-card__wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $wrapper-portfolio-card;
+    transform: translateY(100%);
+    @include transition (transform);
+    
+
+  }
+
+}
+
+.portfolio-card:hover .portfolio-card__wrapper-description,
+.portfolio-card:hover .portfolio-card__wrapper::before {
+  transform: translateY(0);
+}
+
+.portfolio-card__wrapper-description {
+  height: 294px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  @include transition (transform);
+  overflow-y: auto;
+
+}
+
+.portfolio-card__wrapper-text {
+  color: $white-color;
+  margin: 0;
+  @include font (400, 18, 1.56, 0.03);
+  
+
+
+}

@@ -1,0 +1,13 @@
+﻿.title {
+  color: $secondary-text-color;
+  @include font (700, 28, 1.17, 0.03);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include font (700, 36, 1.16, 0.03);
+    margin-bottom: 50px;
+  }
+  
+}

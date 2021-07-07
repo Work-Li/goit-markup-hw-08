@@ -1,0 +1,47 @@
+﻿.page-header {
+  border-bottom: 1px solid $border-line-color;
+
+}
+.page-header__container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.page-header__menu {
+ @extend %flex-centered;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}
+
+.nav-menu {
+  display: flex;
+  color: $secondary-text-color;
+  @include font (500, 14, 1.14, 0.02);
+  
+  
+
+}
+
+.nav-menu__item:not(:last-child),
+.header-contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header__contact {
+  margin-left: auto;
+}
+.header-contact {
+  display: flex;
+  color: $primary-text-color;
+  align-items: center;
+}
+
+.header-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+

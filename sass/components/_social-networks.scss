@@ -1,0 +1,30 @@
+﻿.social-networks {
+  @extend %flex-centered;
+  
+}
+
+
+.network__link {
+  @extend %flex-centered;
+  height: 44px;
+  width: 44px;
+  color: $icons-color;
+  background-color: $white-color;
+  border-radius: 50%;
+  @include transition (color, background-color);
+ 
+
+  &:hover {
+    color: $white-color;
+    background-color: $active-color;
+
+  }
+
+}
+
+.network__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+

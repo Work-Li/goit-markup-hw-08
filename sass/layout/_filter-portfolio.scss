@@ -1,0 +1,14 @@
+﻿.portfolio-page__filter {
+  margin-bottom: 50px;
+}
+
+.filter-btn-list {
+  @extend %flex-centered;
+
+
+}
+
+.filter-btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+

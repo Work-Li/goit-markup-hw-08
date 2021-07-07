@@ -1,0 +1,30 @@
+﻿.link {
+  @extend %flex-centered;
+  text-decoration: none;
+  color: inherit;
+  font-style: inherit;
+  @include transition(color);
+  
+
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+
+  &--current {
+    position: relative;
+    color: $active-color;
+  }
+
+  &--current::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: $active-color;
+    border-radius: 2px;
+    top: 44px;
+
+  }
+
+}

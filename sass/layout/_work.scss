@@ -1,0 +1,46 @@
+﻿.work {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.work__container {
+  padding-top: 0;
+  
+}
+
+.work__list {
+  display: flex;
+}
+
+
+
+.work__list-item {
+  width: 370px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work__wrapper-title {
+  background-color: $wrapper-title;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+
+}
+
+.work__list-item-title {
+  color: $white-color;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+

@@ -1,0 +1,15 @@
+﻿.logo {
+  font-family: Raleway, sans-serif;
+  @include font (700, 26, 1.19);
+  color: $active-color;
+}
+
+
+
+.logo-part {
+  color: $secondary-text-color;
+}
+
+.logo-part--color-white {
+  color: $white-color;
+}

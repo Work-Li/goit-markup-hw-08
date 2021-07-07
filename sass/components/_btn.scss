@@ -1,0 +1,79 @@
+﻿
+.btn {
+  @extend %flex-centered;
+  text-align: center;
+  @extend %center;
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  @include font (700, 16, 1.87, 0.06);
+  background: $active-color;
+  color: $white-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &--padding-0 {
+    padding: 0;
+  }
+
+  &--padding-tb-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--padding-10-29 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    text-align: start;
+
+  }
+
+  &--filter-style {
+    height: auto;
+    width: auto;
+    background-color: $background-secondary-color;
+    color: $secondary-text-color;
+    box-sizing: content-box;
+    line-height: 1.62;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+
+
+  }
+
+  &--filter-style-active {
+    box-sizing: content-box;
+    font-weight: 500;
+    line-height: 1.62;
+    padding: 6px 22px;
+    letter-spacing: 0.03em;
+    background-color: $active-color;
+    color: $white-color;
+
+  }
+
+  &--filter-style:hover,
+  &--filter-style:focus,
+  &--filter-style:active {
+    background-color: $active-color;
+    color: $white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+
+
+}

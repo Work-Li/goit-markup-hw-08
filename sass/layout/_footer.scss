@@ -1,0 +1,103 @@
+﻿.footer-page {
+  background-color: $dark-background;
+  color: $white-color;
+
+}
+
+.footer-page__container {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+}
+.footer-page__logo {
+  margin-bottom: 20px;
+}
+
+.footer-page__logo-contact {
+  margin-right: 70px;
+  width: 231px;
+
+}
+.logo-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-block__item {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+  &:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+
+  &:not(:first-child) {
+  color: $footer-contact-color;
+}
+
+}
+
+.footer-page__title,
+.subscription__title {
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.footer-page__social-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 93px;
+}
+
+.network__link--dark-bg {
+color: $white-color;
+background-color: $footer-icon-bg-color;
+@include transition (background-color);
+}
+
+
+.subscription-form {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.subscription-form__input {
+  box-sizing: border-box;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 0;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid $input-border-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $white-color;
+
+  &::placeholder {
+    color: $footer-contact-color;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+}
+
+.subscription-form__text-btn {
+  margin-right: 10px;
+  
+}
+
+.subscription-form__icon {
+  width: 24px;
+  height: 24px;
+  fill: $white-color;
+  vertical-align: middle;
+
+}
