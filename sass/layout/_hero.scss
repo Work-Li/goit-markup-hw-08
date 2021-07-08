@@ -4,29 +4,77 @@
 }
 
 .hero__container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
 }
 
 .layers {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
   background-color: $dark-background;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero/hero-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url('../../images/hero/mobile/hero-bg-m-min.jpg');
+
+  @media (min-device-pixel-ratio: 2) and (min-width:480px),
+  (min-resolution: 192dpi) and (min-width:480px),
+  (min-resolution: 2dppx) and (min-width:480px) {
+    // width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/hero/mobile/hero-bg-m@2x-min.jpg');
+  }
+
+  @media screen and (min-width:768px) {
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/tablet/hero-bg-t-min.jpg'); 
+    }
+
+  @media (min-device-pixel-ratio: 2) and (min-width:768px),
+  (min-resolution: 192dpi) and (min-width:768px),
+  (min-resolution: 2dppx) and (min-width:768px) {
+    // width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/tablet/hero-bg-t@2x-min.jpg');
+  }
+  
+
+  @media screen and (min-width:1200px) {
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/hero/desktop/hero-bg-d.jpg');
+  }
+  
+  @media (min-device-pixel-ratio: 2) and (min-width:1200px),
+  (min-resolution: 192dpi) and (min-width:1200px),
+  (min-resolution: 2dppx) and (min-width:1200px) {
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/desktop/hero-bg-d@2x.jpg');
+  }
+
 }
 
 
 .hero__title {
   text-transform: uppercase;
   color: $white-color;
-  @include font (900, 44, 1.36, 0.06);
+  @include font (900, 26, 1.62, 0.06);
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include font (900, 44, 1.36, 0.06);
+  }
+  
 }
 

@@ -62,7 +62,7 @@
       </div>
     </header> -->
     <main>
-      <!-- <section class="hero layers">
+      <section class="hero layers">
         <div class="section container hero__container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -72,7 +72,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="advantages">
         <div class="section container">
@@ -143,6 +143,10 @@
           <ul class="list work__list">
             <li class="list-item work__list-item">
               <img
+                srcset="
+                  ./images/work/img1.jpg        1x,
+                  ./images/work/img1@2x-min.jpg 2x
+                "
                 src="./images/work/img1.jpg"
                 alt="Ноутбук"
                 width="370"
@@ -156,6 +160,10 @@
             </li>
             <li class="list-item work__list-item">
               <img
+                srcset="
+                  ./images/work/img2.jpg        1x,
+                  ./images/work/img2@2x-min.jpg 2x
+                "
                 src="./images/work/img2.jpg"
                 alt="Телефон"
                 width="370"
@@ -169,6 +177,10 @@
             </li>
             <li class="list-item work__list-item">
               <img
+                srcset="
+                  ./images/work/img3.jpg        1x,
+                  ./images/work/img3@2x-min.jpg 2x
+                "
                 src="./images/work/img3.jpg"
                 alt="Планшет"
                 width="370"
@@ -184,17 +196,67 @@
         </div>
       </section>
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="section container">
           <h2 class="title team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="list-item team-card team__team-card">
-              <img
-                src="./images/team/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                class="team-card__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/igor-d-min.webp    1x,
+                    ./images/team/desktop/igor-d@2x-min.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/igor-d-min.jpg    1x,
+                    ./images/team/desktop/igor-d@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/igor-t-min.webp    1x,
+                    ./images/team/tablet/igor-t@2x-min.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/igor-t-min.jpg    1x,
+                    ./images/team/tablet/igor-t@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/igor-m-min.webp    1x,
+                    ./images/team/mobile/igor-m@2x-min.webp 2x
+                  "
+                  media="(min-width:480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/igor-m-min.jpg    1x,
+                    ./images/team/mobile/igor-m@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/team/desktop/igor-d-min.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  class="team-card__photo"
+                />
+              </picture>
+
               <h3 class="list-item-title team-card__title">Игорь Демьяненко</h3>
               <p lang="en" class="list-item-text team-card__text">
                 Product Designer
@@ -234,17 +296,66 @@
               </ul>
             </li>
             <li class="list-item team-card team__team-card">
-              <img
-                src="./images/team/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                class="team-card__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/olga-d-min.webp    1x,
+                    ./images/team/desktop/olga-d@2x-min.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/olga-d-min.jpg    1x,
+                    ./images/team/desktop/olga-d@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/olga-t-min.webp    1x,
+                    ./images/team/tablet/olga-t@2x-min.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/olga-t-min.jpg    1x,
+                    ./images/team/tablet/olga-t@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/olga-m-min.webp    1x,
+                    ./images/team/mobile/olga-m@2x-min.webp 2x
+                  "
+                  media="(min-width:480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/olga-m-min.jpg    1x,
+                    ./images/team/mobile/olga-m@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/team/desktop/olga-d-min.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  class="team-card__photo"
+                />
+              </picture>
               <h3 class="list-item-title team-card__title">Ольга Репина</h3>
               <p lang="en" class="list-item-text team-card__text">
                 Frontend Developer
               </p>
-              <ul class="list social-networks">
+              <ul class="list social-networks team-card__social-networks">
                 <li class="social-networks__item network">
                   <a
                     href="https://www.instagram.com"
@@ -279,15 +390,65 @@
               </ul>
             </li>
             <li class="list-item team-card team__team-card">
-              <img
-                src="./images/team/nikolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                class="team-card__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/nikolay-d-min.webp    1x,
+                    ./images/team/desktop/nikolay-d@2x-min.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/nikolay-d-min.jpg    1x,
+                    ./images/team/desktop/nikolay-d@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/nikolay-t-min.webp    1x,
+                    ./images/team/tablet/nikolay-t@2x-min.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/nikolay-t-min.jpg          1x,
+                    ./images/team/tabletmobile/nikolay-t@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/nikolay-m-min.webp    1x,
+                    ./images/team/mobile/nikolay-m@2x-min.webp 2x
+                  "
+                  media="(min-width:480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/nikolay-m-min.jpg    1x,
+                    ./images/team/mobile/nikolay-m@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/team/desktop/nikolay-d-min.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  class="team-card__photo"
+                />
+              </picture>
+
               <h3 class="list-item-title team-card__title">Николай Тарасов</h3>
               <p lang="en" class="list-item-text team-card__text">Marketing</p>
-              <ul class="list social-networks">
+              <ul class="list social-networks team-card__social-networks">
                 <li class="social-networks__item network">
                   <a
                     href="https://www.instagram.com"
@@ -322,17 +483,67 @@
               </ul>
             </li>
             <li class="list-item team-card team__team-card">
-              <img
-                src="./images/team/michail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                class="team-card__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/mihail-d-min.webp    1x,
+                    ./images/team/desktop/mihail-d@2x-min.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/mihail-d-min.jpg    1x,
+                    ./images/team/desktop/mihail-d@2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/mihail-t-min.webp    1x,
+                    ./images/team/tablet/mihail-t@2x-min.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/mihail-t-min.jpg    1x,
+                    ./images/team/tablet/mihail-t@2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mihail-m-min.webp    1x,
+                    ./images/team/mobile/mihail-m@2x-min.webp 2x
+                  "
+                  media="(min-width:480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/mihail-m-min.jpg    1x,
+                    ./images/team/mobile/mihail-m@2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/team/desktop/mihail-d-min.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  class="team-card__photo"
+                />
+              </picture>
+
               <h3 class="list-item-title team-card__title">Михаил Ермаков</h3>
               <p lang="en" class="list-item-text team-card__text">
                 UI Designer
               </p>
-              <ul class="list social-networks">
+              <ul class="list social-networks team-card__social-networks">
                 <li class="social-networks__item network">
                   <a
                     href="https://www.instagram.com"
@@ -368,7 +579,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="clients">
         <div class="section container">
@@ -422,12 +633,9 @@
     </main>
     <footer class="footer-page">
       <div class="section container footer-page__container">
-        
         <div class="logo-contact footer-page__logo-contact">
           <a href="/" lang="en" class="logo link footer-page__logo"
-            >Web<span class="logo-part logo-part--color-white"
-              >Studio</span
-            ></a
+            >Web<span class="logo-part logo-part--color-white">Studio</span></a
           >
           <address class="contact-block footer-page__contact-block">
             <ul class="list">
@@ -491,7 +699,7 @@
             </li>
           </ul>
         </div>
-       
+
         <div class="subscription">
           <h3 class="list-item-title subscription__title">
             подпишитесь на рассылку
