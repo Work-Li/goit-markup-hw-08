@@ -17,13 +17,16 @@
   }
 
   &--current::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background-color: $active-color;
-    border-radius: 2px;
-    top: 44px;
+    @media screen and (min-width: 768px) {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $active-color;
+      border-radius: 2px;
+      top: 44px;
+    }
+  
 
   }
 
