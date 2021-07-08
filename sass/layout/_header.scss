@@ -8,18 +8,37 @@
   
   @media screen and (min-width:768px) {
   display: flex;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  }
+  
+@media screen and (min-width:1200px) {
   padding-top: 24px;
-  padding-bottom: 25px;}
-
+  padding-bottom: 25px;
+}
  
 }
 
 .page-header__menu {
- @extend %flex-centered;
+  
+    display: flex;
+    justify-content: space-between;
+  
+  @media screen and (min-width:768px) {
+    align-items: center;
+    justify-content: center;
+  }
+ 
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  @media screen and (min-width:768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 93px;
+  }
+  
 }
 
 .nav-menu {
@@ -28,6 +47,7 @@
       display: flex;
       color: $secondary-text-color;
       @include font (500, 14, 1.14, 0.02);
+      margin-right: 84px;
     }
   
   
@@ -35,23 +55,42 @@
 
 }
 
-.nav-menu__item:not(:last-child),
-.header-contact__item:not(:last-child) {
+.nav-menu__item:not(:last-child) {
   margin-right: 50px;
 }
+.header-contact__item:not(:last-child) {
+  @media screen and (min-width:768px) {
+    margin-bottom: 10px;
+  }
 
+  @media screen and (min-width:1200px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
 .page-header__contact {
-  margin-left: auto;
+  @media screen and (min-width:1200px) {margin-left: auto;}
+  
 }
 .header-contact {
   display: none;
 
   @media screen and (min-width:768px) {
     display: flex;
+    flex-direction: column;
     color: $primary-text-color;
-    align-items: center;
+    @include font (500, 12, 1.16, 0.02);
+    align-items: flex-start;
   }
- 
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+    @include font (500, 14, 1.14, 0.02);
+    align-items: center;
+
+    &:first-child {
+      align-items: center;
+    }
+  }
 }
 
 .header-contact__icon {
@@ -62,7 +101,7 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-color: $white-color;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,9 +113,7 @@
   transform: translateX(100%);
   @include transition (transform);
 
-  // &:last-child {
-  //   align-items: flex-end;
-  // }
+  
 }
 
 .mobile-menu.is-open {
@@ -124,6 +161,7 @@
   top: 10px;
   right: 15px;
 }
+
 .mobile-menu__nav {
   @include font (500, 40, 1.17, 0.02);
   display: flex;
@@ -167,16 +205,20 @@
   @media screen and (max-width: 467.99px) {
     flex-wrap: wrap;
     justify-content: center;
-   
-    
   }
-  
 }
 
-
 .mobile-menu__network {
+  position: relative;
   color: $active-color;
   @include font (500, 18, 1.17, 0.02);
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 15px;
+  }
+  
+  
 
   @media screen and (max-width: 467.99px) {
     width: calc((100% - 20px) / 2);
@@ -186,7 +228,5 @@
   }
    
 
-  // &:not(:last-child) {
-  //   margin-right: 20px;
-  // }
+  
 }
