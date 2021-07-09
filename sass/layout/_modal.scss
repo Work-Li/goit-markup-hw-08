@@ -33,6 +33,9 @@
   @include transition (transform);
   padding: 40px;
 
+  @media screen and (max-width:479.3px) {
+    width: fit-content;
+  }
   @media screen and (min-width:1200px) {
     width: 528px;
   }
