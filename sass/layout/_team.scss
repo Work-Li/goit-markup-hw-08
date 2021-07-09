@@ -36,41 +36,27 @@
 .team__team-card {
 
   &:not(:last-child) {
-    margin-bottom: 30px;
- 
-  
+    @media screen and (max-width:767.3px) {
+      margin-bottom: 30px;
+    }
+    
     @media screen and (min-width:1200px) {
      margin-right: 30px;
     
     }
- 
   }
-  
-
   &:not(:nth-child(2n)) {
-    @media screen and (min-width:768px) {
-    margin-right: 30px;
-    }
+    @media screen and (min-width:768px) and (max-width:1199.3px) {
+      margin-right: 30px;
+      }
   }  
+  
   &:not(:nth-last-child(-n+2)) {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199.3px) {
     margin-bottom: 30px;
     }
-    
-  
-  }
-  &:nth-child(3n) {
-    @media screen and (min-width:768px) {
-      margin-bottom: 0; 
-    }
   }
   
-  &:nth-child(-n + 2) {
-    @media screen and (min-width:1200px) {
-        margin-bottom: 0;
-  }
-  
-  }
 } 
 
 .team-card__title {
