@@ -6,6 +6,7 @@
   height: 100%;
   background-color: $backdrop-color;
   opacity: 1;
+  overflow-y: scroll;
   @include transition (opacity);
   
 }
@@ -34,7 +35,9 @@
   padding: 40px;
 
   @media screen and (max-width:479.3px) {
-    width: fit-content;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    overflow-y: scroll;
   }
   @media screen and (min-width:1200px) {
     width: 528px;
