@@ -27,11 +27,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: 450px;
   background-color: $white-color;
   border: 1px solid $border-modal-color;
   @include transition (transform);
   padding: 40px;
+
+  @media screen and (min-width:1200px) {
+    width: 528px;
+  }
 
 }
 
@@ -145,8 +149,13 @@
   position: relative;
   display: block;
   margin-bottom: 30px;
-  margin-left: 7px;
-  padding-left: 25px;
+  padding-left: 24px;
+  @include font (400, 12, 1.16, 0.03);
+
+  @media screen and (min-width:1200px) {
+    @include font (400, 14, 1.71, 0.03);
+    margin-left: 7px;
+  }
 
 }
 .modal-form__checkbox-icon {
